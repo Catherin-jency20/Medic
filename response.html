@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedAlert - Response Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <div class="logo-icon">🚑</div>
+            <div class="logo-text">MedAlert</div>
+        </div>
+
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="response.html" class="nav-link">Response Time</a></li>
+             <li><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <label for="sosToggle" class="sos-btn-header">CALL SOS</label>
+    </div>
+</nav>
+<section class="tracking-section">
+
+    <!-- Emergency Card -->
+    <div class="tracking-card">
+    <h2>Emergency ID: MED-2026-001</h2>
+
+    <p>
+        Status:
+        <span id="statusText">
+            Ambulance Dispatched
+        </span>
+    </p>
+
+    <p>
+        ETA:
+        <span id="eta">
+            6 Minutes
+        </span>
+    </p>
+</div>
+    <!-- ADD THIS -->
+    <div class="location-card">
+        <p id="userLocation">
+📍 Waiting for permission...
+</p>
+        <p id="zone">
+            🚑 Nearest Response Unit: Finding nearest ambulance...
+        </p>
+    </div>
+
+    <!-- ADD THIS -->
+    <div class="map">
+    <div id="ambulance">🚑</div>
+    
+
+    <div id="hospital"
+         style="
+         position:absolute;
+         right:20px;
+         top:120px;
+         font-size:40px;">
+         🏥
+    </div>
+</div>
+
+    <!-- Existing Status Timeline -->
+    <div class="status-container">
+        ...
+    </div>
+
+</section>
+<section>
+        <div class="step active">
+            ✓ SOS Received
+        </div>
+
+        <div class="step active">
+            ✓ Dispatch Center Notified
+        </div>
+
+        <div class="step active">
+            ✓ Ambulance Assigned
+        </div>
+
+        <div class="step" id="step4">
+            Ambulance En Route
+        </div>
+
+        <div class="step" id="step5">
+            Patient Reached
+        </div>
+
+        <div class="step" id="step6">
+            Hospital Arrival
+        </div>
+
+    </div>
+
+</section>
+
+<script src="tracking.js"></script>
+<!-- SOS Modal -->
+<input type="checkbox" id="sosToggle" class="sos-toggle" hidden>
+
+<div class="sos-modal">
+    <label for="sosToggle" class="sos-close">&times;</label>
+
+    <div class="sos-modal-content">
+        <div class="sos-pulse-icon">🚑</div>
+
+        <h2>EMERGENCY ALERT ACTIVATED</h2>
+
+        <p class="sos-subtext">
+            Emergency responders have been notified
+        </p>
+
+        <div class="sos-location">
+            📍 Sending your location to dispatch center
+        </div>
+
+        <a href="tel:108" class="sos-confirm-btn">
+            📞 CALL NOW - 108
+        </a>
+
+        <label for="sosToggle" class="sos-cancel-btn">
+            CANCEL
+        </label>
+
+        <p class="sos-message">
+            Emergency services responding to your location
+        </p>
+    </div>
+</div>
+
+<!-- Response Tracker Section -->
+<section class="response-tracker">
+
+    <div class="container">
+
+        <h2>Live Response Performance</h2>
+
+        <p class="tracker-subtitle">
+            Our commitment to rapid emergency response across all zones
+        </p>
+
+        <div class="tracker-grid">
+
+            <div class="tracker-zone">
+                <div class="zone-name">Zone A</div>
+                <div class="response-time">3.2 min</div>
+                <div class="response-bar">
+                    <div class="response-fill" style="width:95%; background:#27ae60;"></div>
+                </div>
+                <div class="zone-stats">98% reliability | 145 calls</div>
+            </div>
+
+            <div class="tracker-zone">
+                <div class="zone-name">Zone B</div>
+                <div class="response-time">4.1 min</div>
+                <div class="response-bar">
+                    <div class="response-fill" style="width:91%; background:#f39c12;"></div>
+                </div>
+                <div class="zone-stats">92% reliability | 178 calls</div>
+            </div>
+
+            <div class="tracker-zone">
+                <div class="zone-name">Zone C</div>
+                <div class="response-time">5.0 min</div>
+                <div class="response-bar">
+                    <div class="response-fill" style="width:85%; background:#e67e22;"></div>
+                </div>
+                <div class="zone-stats">85% reliability | 203 calls</div>
+            </div>
+
+            <div class="tracker-zone">
+                <div class="zone-name">Zone D</div>
+                <div class="response-time">4.8 min</div>
+                <div class="response-bar">
+                    <div class="response-fill" style="width:88%; background:#3498db;"></div>
+                </div>
+                <div class="zone-stats">88% reliability | 189 calls</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="response.js"></script>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div class="footer-section">
+                <h4>MedAlert</h4>
+                <p>Dedicated to saving lives, one emergency at a time.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+
+                <div class="social-links">
+                    <a href="#" class="social-btn">f</a>
+                    <a href="#" class="social-btn">𝕏</a>
+                    <a href="#" class="social-btn">📷</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 MedAlert Emergency Services. All rights reserved.</p>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

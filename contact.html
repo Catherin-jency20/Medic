@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedAlert - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <div class="logo-icon">🚑</div>
+            <div class="logo-text">MedAlert</div>
+        </div>
+
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="response.html" class="nav-link">Response Time</a></li>
+             <li><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <label for="sosToggle" class="sos-btn-header">CALL SOS</label>
+    </div>
+</nav>
+
+<!-- SOS Modal -->
+<input type="checkbox" id="sosToggle" class="sos-toggle" hidden>
+
+<div class="sos-modal">
+    <label for="sosToggle" class="sos-close">&times;</label>
+
+    <div class="sos-modal-content">
+        <div class="sos-pulse-icon">🚑</div>
+
+        <h2>EMERGENCY ALERT ACTIVATED</h2>
+
+        <p class="sos-subtext">
+            Emergency responders have been notified
+        </p>
+
+        <div class="sos-location">
+            📍 Sending your location to dispatch center
+        </div>
+
+        <a href="tel:108" class="sos-confirm-btn">
+            📞 CALL NOW - 108
+        </a>
+
+        <label for="sosToggle" class="sos-cancel-btn">
+            CANCEL
+        </label>
+
+        <p class="sos-message">
+            Emergency services responding to your location
+        </p>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<section class="contact">
+
+    <div class="container">
+
+        <h2>Get in Touch</h2>
+
+        <div class="contact-content">
+
+            <div class="contact-info">
+
+                <h3>Emergency Contact</h3>
+
+                <div class="contact-item">
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">112 / 108</span>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">emergency@medalert.com</span>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-label">Hours</span>
+                    <span class="contact-value">24/7/365</span>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-label">Service Area</span>
+                    <span class="contact-value">Metropolitan & Suburban Zones</span>
+                </div>
+
+            </div>
+
+            <form class="contact-form">
+
+                <input type="text" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Your Email" required>
+
+                <input type="tel" placeholder="Phone Number" required>
+
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+
+                <button type="submit" class="btn btn-primary">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div class="footer-section">
+                <h4>MedAlert</h4>
+                <p>Dedicated to saving lives, one emergency at a time.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="response.html">Response Time</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+
+                <div class="social-links">
+                    <a href="#" class="social-btn">f</a>
+                    <a href="#" class="social-btn">𝕏</a>
+                    <a href="#" class="social-btn">📷</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 MedAlert Emergency Services. All rights reserved.</p>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

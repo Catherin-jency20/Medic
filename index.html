@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedAlert - Emergency Medical Response Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">🚑</div>
+      <span>MedAlert</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="response.html" class="nav-link">Response Time</a></li>
+       <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <label for="sosToggle" class="sos-btn-header">CALL SOS</label>
+  </div>
+</nav>
+
+<!-- SOS MODAL -->
+<input type="checkbox" id="sosToggle" class="sos-toggle" hidden>
+<div class="sos-modal">
+  <label for="sosToggle" class="sos-close">&times;</label>
+  <div class="sos-modal-content">
+    <div class="sos-pulse-icon">🚑</div>
+    <h2>EMERGENCY ALERT</h2>
+    <p class="sos-subtext">Emergency responders have been notified</p>
+    <div class="sos-location">📍 Location: Activating emergency dispatch</div>
+    <a href="tel:112" class="sos-confirm-btn">📞 CALL EMERGENCY - 108</a>
+    <label for="sosToggle" class="sos-cancel-btn">CANCEL</label>
+    <p class="sos-message">✓ Emergency services responding to your location</p>
+  </div>
+</div>
+
+<!-- HERO SECTION - 2 COLUMNS -->
+<section class="hero">
+  <div class="hero-container">
+    <!-- LEFT COLUMN - CONTENT -->
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span>🚑</span>
+        <span>Emergency Medical Response Platform</span>
+      </div>
+      
+      <h1>Every Second Counts</h1>
+      
+      <p class="hero-subtitle">MedAlert connects patients, emergency responders, and hospitals through a rapid response platform designed to reduce critical delays and save lives.</p>
+      
+      <div class="hero-features">
+        <div class="feature-item">
+          <span class="feature-check">✓</span>
+          <span>One-Tap SOS Activation</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-check">✓</span>
+          <span>Live Response Tracking</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-check">✓</span>
+          <span>Fast Ambulance Dispatch</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-check">✓</span>
+          <span>24/7 Emergency Support</span>
+        </div>
+      </div>
+      
+      <div class="hero-buttons">
+        <label for="sosToggle" class="btn btn-primary">Emergency Call</label>
+        <a href="about.html" class="btn btn-secondary">Learn More</a>
+      </div>
+      
+      <div class="hero-emergency">
+        <div class="emergency-icon">🚨</div>
+        <div>
+          <h3>Need Emergency Assistance?</h3>
+          <label for="sosToggle" class="emergency-link">Activate Now</label>
+        </div>
+      </div>
+    </div>
+    
+    <!-- RIGHT COLUMN - AMBULANCE IMAGE -->
+    <div class="hero-image">
+      <img src="images/ambulance-removebg-preview.png" alt="Emergency Ambulance" class="ambulance-image">
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS SECTION -->
+<section class="how-it-works">
+  <div class="container">
+    <h2>How MedAlert Works</h2>
+    <div class="works-grid">
+      <div class="work-step">
+        <div class="step-number">1</div>
+        <h3>SOS Activated</h3>
+        <p>User sends emergency request instantly with one tap.</p>
+      </div>
+      <div class="work-step">
+        <div class="step-number">2</div>
+        <h3>Dispatch Center</h3>
+        <p>Emergency request reaches control center in real-time.</p>
+      </div>
+      <div class="work-step">
+        <div class="step-number">3</div>
+        <h3>Nearest Ambulance</h3>
+        <p>Closest response unit is dispatched immediately.</p>
+      </div>
+      <div class="work-step">
+        <div class="step-number">4</div>
+        <h3>Hospital Care</h3>
+        <p>Patient reaches medical facility safely with live updates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEED HELP SECTION -->
+<section class="need-help">
+  <div class="container">
+    <h2>Need Emergency Assistance?</h2>
+    <p>Fast medical response can save lives. Connect with emergency services instantly.</p>
+    <label for="sosToggle" class="call-link">Call Emergency Services</label>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>MedAlert</h4>
+      <p>Dedicated to saving lives, one emergency at a time.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#" class="social-btn">f</a>
+        <a href="#" class="social-btn">𝕏</a>
+        <a href="#" class="social-btn">📷</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 MedAlert Emergency Services. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
